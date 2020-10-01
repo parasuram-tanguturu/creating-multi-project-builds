@@ -62,3 +62,10 @@ mkdir docs
     4. If you unpack one of the archives (greeter-1.0.zip or greeter-1.0.tar in the greeter/build/distributions directory) you will see the documentation included in the html5 folder.
 
 ---
+# **Refactor common build script code**
+1.  At this point you might have noticed that you have common script code in both greeting-library and greeter sub-projects build scripts.
+2. A key feature of Gradle is the ability to place such common build script code in the root project.
+
+```
+gradlew clean build
+```
