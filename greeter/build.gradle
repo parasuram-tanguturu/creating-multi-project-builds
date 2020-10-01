@@ -15,14 +15,14 @@ dependencies {
     }
 }
 
-//distZip {
-//    from project(':docs').asciidoctor,{
-//        into "${project.name}-${version}"
-//    }
-//}
-//
-//distTar{
-//    from project(':docs').asciidoctor,{
-//        into "${project.name}-${version}"
-//    }
-//}
+distZip {
+    from project(':docs').asciidoctor,{
+        into "${project.name}-${version}"
+    }
+}
+
+distTar{
+    from project(':docs').asciidoctor,{
+        into "${project.name}-${version}"
+    }
+}
